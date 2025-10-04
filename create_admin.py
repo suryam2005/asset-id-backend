@@ -4,6 +4,7 @@ Script to create an admin user
 """
 import requests
 import json
+import os
 
 BASE_URL = "http://localhost:8000"
 
@@ -11,9 +12,9 @@ def create_admin_user():
     """Create an admin user"""
     
     admin_user = {
-        "username": "admin",
-        "email": "admin@company.com",
-        "password": "admin123",
+        "username": os.getenv("ADMIN_USERNAME", "[admin_username]"),
+        "email": os.getenv("ADMIN_EMAIL", "[admin_email]"),
+        "password": os.getenv("ADMIN_PASSWORD", "[admin_password]"),
         "role": "admin"
     }
     

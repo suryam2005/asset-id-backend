@@ -6,6 +6,7 @@ import requests
 import json
 import csv
 import io
+import os
 
 BASE_URL = "http://localhost:8000"
 
@@ -17,8 +18,8 @@ def test_admin_endpoints():
     
     # Login as admin (replace with actual admin credentials)
     admin_login = {
-        "username": "admin",
-        "password": "admin123"
+        "username": os.getenv("ADMIN_USERNAME", "[admin_username]"),
+        "password": os.getenv("ADMIN_PASSWORD", "[admin_password]")
     }
     
     print("1. Logging in as admin...")

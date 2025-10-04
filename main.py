@@ -21,8 +21,12 @@ app.add_middleware(
 )
 
 # Supabase client
-supabase_url = os.getenv("SUPABASE_URL", "https://ekbhrshoupapmitdzbou.supabase.co")
-supabase_key = os.getenv("SUPABASE_KEY", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVrYmhyc2hvdXBhcG1pdGR6Ym91Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg0NjkxMDMsImV4cCI6MjA3NDA0NTEwM30.MhCGoYF2BkuiYp9VHYIa7os5ygws7IJGtAC1sDFfm8Y")
+supabase_url = os.getenv("SUPABASE_URL")
+supabase_key = os.getenv("SUPABASE_KEY")
+
+if not supabase_url or not supabase_key:
+    raise ValueError("SUPABASE_URL and SUPABASE_KEY environment variables are required")
+
 supabase: Client = create_client(supabase_url, supabase_key)
 
 # JWT settings
