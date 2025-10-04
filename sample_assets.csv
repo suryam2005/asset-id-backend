@@ -1,0 +1,11 @@
+tag,name,category,assigned_to,location,purchase_date,purchase_cost,status
+LAP001,Dell Laptop XPS 13,IT Equipment,john.doe,Office Floor 1,2024-01-15,1200.00,Active
+LAP002,MacBook Pro 14,IT Equipment,jane.smith,Office Floor 2,2024-02-01,2500.00,Active
+MON001,Samsung 27 Monitor,IT Equipment,bob.wilson,Office Floor 1,2024-01-20,350.00,Active
+MON002,LG UltraWide Monitor,IT Equipment,alice.brown,Office Floor 3,2024-02-10,450.00,Active
+CHR001,Office Chair Ergonomic,Furniture,john.doe,Office Floor 1,2024-01-10,300.00,Active
+CHR002,Executive Chair Leather,Furniture,jane.smith,Office Floor 2,2024-01-12,500.00,Active
+DSK001,Standing Desk Electric,Furniture,bob.wilson,Office Floor 1,2024-01-08,800.00,Active
+PRN001,HP LaserJet Pro,IT Equipment,,Office Floor 1,2024-01-25,400.00,Active
+TAB001,iPad Pro 12.9,IT Equipment,alice.brown,Office Floor 3,2024-02-05,1100.00,Active
+PHN001,iPhone 15 Pro,IT Equipment,john.doe,Office Floor 1,2024-02-15,1000.00,Active
